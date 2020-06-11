@@ -1,0 +1,261 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="WebsiteMasterPage.master.cs" Inherits="WebsiteMasterPage" %>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Beekids</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Inter&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed|Roboto+Slab|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/css/owlcarousel/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/meanmenu.min.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/shortcode.css">
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/AddStyle.css" />
+    <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css ' />
+    <link href="/css/icofont.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <asp:ContentPlaceHolder ID="headlink" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+
+        <asp:ContentPlaceHolder ID="hihead" runat="server">
+        </asp:ContentPlaceHolder>
+        <header class="header-style1-1">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-md-2 col-sm-4">
+                        <h1 class="logo"><a href="/">
+                            <img src="/images/logo.png" alt="logo"></a></h1>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <div class="d-lg-flex justify-content-lg-center">
+                            <div class="menu-holder">
+                                <div class="mobile-menu"></div>
+                                <div class="main-menu navigation">
+                                    <nav>
+                                        <ul>
+                                            <li class="active"><a href="/">Trang chủ </a></li>
+                                            <li><a href="#">Giải pháp <i class="fa fa-angle-down hidden-xs hidden-sm"></i></a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="#">Tư duy và sáng tạo <i class="fa fa-angle-down"></i></a>
+                                                        <ul class="sub-menu">
+                                                            <li><a href="#">Tư duy và sáng tạo 1 </a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">Trải nghiệm và thói quen <i class="fa fa-angle-down"></i></a>
+                                                        <ul class="sub-menu">
+                                                            <li><a href="#">Trải nghiệm và thói quen 1</a></li>
+                                                            <li><a href="#">Trải nghiệm và thói quen 2</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">Truyền thông và đối tác <i class="fa fa-angle-down"></i></a>
+                                                        <ul class="sub-menu">
+                                                            <li><a href="#">Truyền thông và đối tác 1</a></li>
+                                                            <li><a href="#">Truyền thông và đối tác 2</a></li>
+                                                            <li><a href="#">Truyền thông và đối tác 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="clickid" href="/#nentang" data-ref="#nentang">Nền tảng</a></li>
+                                            <li><a class="clickid" href="/#doitac" data-ref="#doitac">Đối tác</a></li>
+                                            <li><a class="clickid" href="/#camnang" data-ref="#camnang">Cẩm nang</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#myModal">Liên hệ</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 hidden-xs">
+                        <div class="helping-box float-lg-right d-flex align-items-center">
+                            <div class="icon-box">
+                                <a href="tel:0906 525 600"><i class="fa fa-envelope"></i></a>
+                            </div>
+                            <div class="overflow-text">
+                                <h6 class="title">Hỗ trợ</h6>
+                                <p><a href="mailto:trung.le@dragon.net">trung.le@dragon.net</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <asp:ContentPlaceHolder ID="himenu" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder ID="higlobal" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder ID="hislider" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder ID="hibelowtop" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder ID="hibodyhead" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder ID="hibodywrapper" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder ID="hibodybottom" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder ID="hibelowbottom" runat="server">
+        </asp:ContentPlaceHolder>
+
+
+        <div class="footer">
+            <div class="container">
+
+                <div class="row footer-top">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-title">
+                            <img class="logo-footer" src="/images/logo-footer.png" alt="">
+                            <p class="sumary-footer">
+                                Beekids cam kết mang đến cho khách hàng sự hài lòng thông qua các sản phẩm chất lượng cao &
+                            an toàn cùng dịch vụ hoàn hảo
+                            </p>
+                            <p class="footer-sumary"><i class="fa fa-home"></i>91 Kinh Dương Vương</p>
+                            <p class="footer-sumary"><a href="tel:0906525600"><i class="fa fa-phone"></i>0906 525 600</a></p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="title-sumary">Lợi ích</div>
+                        <div class="footer-sumary">Phát Triển Trí Não</div>
+                        <div class="footer-sumary">Kích Thích Tư Duy</div>
+                        <div class="footer-sumary">Giúp Trẻ Luôn Vận Động</div>
+                        <div class="footer-sumary">Hỗ Trợ Việc Học Tập</div>
+                        <div class="footer-sumary">Phát Triển Các Kỹ Năng</div>
+                        <div class="footer-sumary">Phát Huy Sự Sáng Tạo</div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div id="fb-root">
+                            <div class="fb-page" data-href="https://www.facebook.com/beekids.edu.vn/" data-tabs=""
+                                data-height="400" data-small-header="false"
+                                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/beekids.edu.vn/" class="fb-xfbml-parse-ignore">
+                                    <a href="https://www.facebook.com/beekids.edu.vn/">Beekids</a>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row copy-right ">
+                    <div class="col-md-12 text-center">
+                        <p>Copyright ©2019 <span class="th-cl">Hifiveplus</span>. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        <h4 class="modal-title ">Thông tin liên hệ</h4>
+                    </div>
+                    <div class="modal-body">
+                        <%-- <div class="d-flex mb-3">
+                            <i class="fa fa-envelope"></i>
+                            <h5 class="title">Email:</h5>
+                            <h5>trung.le@dragon.net</h5>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-phone"></i>
+                            <h5 class="title">Số điện thoại:</h5>
+                            <h5>0906 525 600</h5>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-home"></i>
+                            <h5 class="title">Địa chỉ:</h5>
+                            <h5>91 Kinh Dương Vương</h5>
+                        </div>--%>
+                        <div id="registration-form">
+                            <div class="input-field form-group">
+                                <input class="form-control" value="" id="name" type="text" name="name" maxlength="100" placeholder="Họ và tên" required="" aria-required="true">
+                                <span class="icon-box th-bg"><i class="fa fa-user"></i></span>
+                            </div>
+                            <!--/Input Field End-->
+                            <div class="input-field form-group">
+                                <input class="form-control" value="" id="email" type="email" name="email" maxlength="100" placeholder="Email" required="" aria-required="true">
+                                <span class="icon-box th-bg"><i class="fa fa-envelope"></i></span>
+                            </div>
+                            <!--/Input Field End-->
+                            <div class="input-field form-group">
+                                <input class="form-control" value="" type="text" name="phone" maxlength="100" placeholder="Số điện thoại" required="" aria-required="true">
+                                <span class="icon-box th-bg"><i class="fa fa-phone"></i></span>
+                            </div>
+                            <!--/Input Field End-->
+                            <div class="input-field form-group">
+                                <input class="form-control" value="" type="text" name="home" maxlength="100" placeholder="Địa chỉ" required="" aria-required="true">
+                                <span class="icon-box th-bg"><i class="fa fa-home"></i></span>
+                            </div>
+                            <div class="input-field form-group">
+                                <textarea class="form-control" maxlength="100" placeholder="Nội dung" required="" aria-required="true"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div data-aos="fade-up" data-aos-delay="600" class="form-group m-0 text-left">
+                            <a class="btn btn-bigsize" href="#">Gửi</a>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+
+        <asp:ContentPlaceHolder ID="hifooter" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <script type="text/javascript" src="/js/popper.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+        <script type="text/javascript" src="/js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="/js/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="/js/scrollup.js"></script>
+        <script type="text/javascript" src="/js/owlcarousel/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.meanmenu.js"></script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0"></script>
+        <script type="text/javascript" src="/js/main.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                    //document.getElementById('addslide').style.visibility = "visible";
+                    //document.getElementById("myP").style.clear = "visibility";
+                $('.clickid').on('click', function () {
+                    var idgo = $(this).attr('data-ref');
+                    // alert(idgo);
+                    $("html, body").animate({
+                        scrollTop: $(idgo).offset().top
+                    }, 1000);
+                    return false;
+                });
+            });
+        </script>
+    </form>
+</body>
+</html>
